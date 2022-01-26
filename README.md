@@ -5,7 +5,7 @@
 
 > This is a leaderboard app that displays leader scores and adds them as well.
 
-![screenshot](./app-screenshot1.png)
+![screenshot](./app-screenshot.png)
 
 ## Built With
 
