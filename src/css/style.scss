@@ -1,5 +1,76 @@
-/* unbundled styles */
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
 
-body {
-  background-color: orange;
+h1 {
+  font-size: 8rem;
+  padding: 2rem;
+}
+
+.container {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5rem;
+}
+
+.score-content {
+  width: 40%;
+}
+
+.score-head {
+  font-size: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.scores {
+  border: 2px solid #afadad;
+  margin-top: 2rem;
+
+  & > ul {
+    list-style: none;
+
+    & li {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 1rem;
+      width: 100%;
+    }
+  }
+}
+
+button {
+  padding: 1rem;
+  width: 15rem;
+  border-radius: 5px;
+}
+
+.score-color {
+  background-color: #bebcbc;
+}
+
+.add-score {
+  width: 40%;
+
+  & .title {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+  }
+}
+
+input {
+  width: 100%;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 5px;
+  border: 1px solid #bebcbc;
 }
