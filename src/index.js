@@ -1,25 +1,25 @@
 import './css/style.scss';
 
-import { getScores, postScores, setScore } from './js/api';
-import renderScores from './js/render';
+import { getScores, postScores } from './js/api.js';
+import renderScores from './js/render.js';
 
 const refreshButton = document.querySelector('.refresh');
 const form = document.querySelector('form');
 
 refreshButton.addEventListener('click', async () => {
-	const scores = await getScores();
-	renderScores(scores);
+  const scores = await getScores();
+  renderScores(scores);
 });
 
 form.addEventListener('submit', async (e) => {
-	e.preventDefault();
+  e.preventDefault();
 
-	const score = {
-		user: form.elements.name.value.trim(),
-		score: form.elements.score.value.trim(),
-	};
+  const score = {
+    user: form.elements.name.value.trim(),
+    score: form.elements.score.value.trim(),
+  };
 
-	form.reset();
+  form.reset();
 
-	await postScores(score);
+  await postScores(score);
 });
