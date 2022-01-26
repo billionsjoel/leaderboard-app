@@ -13,4 +13,17 @@ module.exports = {
       template: 'src/index.html',
     }),
   ],
+  module: {
+    rules: [
+      {
+        test: /\.scss$/i,
+        use: ['style-loader', 'css-loader', 'sass-loader'],
+      },
+    ],
+  },
+  devServer: {
+    static: './dist',
+    compress: true,
+    port: 8080,
+  },
 };
