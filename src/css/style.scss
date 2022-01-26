@@ -1,24 +1,24 @@
 *,
 ::after,
 ::before {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
 
 h1 {
-	font-size: 8rem;
-	padding: 2rem;
+  font-size: 8rem;
+  padding: 2rem;
 }
 
 .container {
-	padding: 1rem;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
-	gap: 5rem;
+  gap: 5rem;
 }
 
 .score-content {
@@ -58,7 +58,7 @@ button {
   background-color: #bebcbc;
 }
 
-.add-score{
+.add-score {
   width: 40%;
 
   & .title {
