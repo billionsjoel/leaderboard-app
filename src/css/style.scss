@@ -40,10 +40,15 @@ h1 {
 
     & li {
       display: flex;
-      justify-content: space-around;
+      justify-content: flex-start;
       align-items: center;
       padding: 1rem;
       width: 100%;
+      gap: 4rem;
+
+      & span {
+        width: 50%;
+      }
     }
   }
 }
