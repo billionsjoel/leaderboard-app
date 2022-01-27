@@ -12,6 +12,10 @@ h1 {
   padding: 2rem;
 }
 
+.black {
+  color: #000000 !important;
+}
+
 .container {
   padding: 1rem;
   display: flex;
@@ -26,9 +30,29 @@ h1 {
 }
 
 .score-head {
-  font-size: 2rem;
+  padding: 2rem;
   display: flex;
   justify-content: space-between;
+  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  border-radius: 2px;
+  box-shadow: 1px 1px 1px #e2e0e0;
+
+  & .score-title {
+    display: flex;
+    align-items: center;
+    font-size: 2.3rem;
+    gap: 2rem;
+    color: #fffdfd;
+  }
+
+  & .trophy {
+    background-image: linear-gradient(to right, #e1e42b, #cdeb4b);
+    padding: 1rem;
+    border-radius: 100%;
+    height: 4rem;
+    width: 4rem;
+    margin-top: 1rem;
+  }
 }
 
 .scores {
@@ -45,6 +69,7 @@ h1 {
       padding: 1rem;
       width: 100%;
       gap: 4rem;
+      color: #fffdfd;
 
       & span {
         width: 50%;
@@ -54,21 +79,49 @@ h1 {
 }
 
 button {
-  padding: 1rem;
-  width: 15rem;
+  border: 1px solid #7adf90;
+  color: #7ed56f;
+  margin-top: 1.6rem;
+  height: 3rem;
+  width: 10rem;
   border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+
+    & svg {
+      height: 1rem;
+      width: 1rem;
+    }
+
+    &:hover {
+    border: 1px solid #61f180;
+    background-color: #f3f3f3;
+    color: #28b485;
+
+  }
 }
 
 .score-1 {
-  background-color: #e2e0e0;
+  background-color: #7ed56f;
+}
+.score-2 {
+  background-color: #28b485;
 }
 
 .add-score {
   width: 40%;
 
+  & .score-container {
+    background-image: linear-gradient(45deg, #7f77c7, #704bf5);
+    padding: 1rem;
+    color: #fffdfd;
+  }
+
   & .title {
     font-size: 2rem;
-    margin-bottom: 3rem;
   }
 }
 
@@ -78,6 +131,24 @@ input {
   margin: 1rem 0;
   border-radius: 5px;
   border: 1px solid #bebcbc;
+}
+
+.submit-btn {
+  background-color: #7f77c7;
+  color: #ffffff;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: #704bf5;
+    cursor: pointer;
+  }
+}
+
+.avatar {
+  border-radius: 100%;
+  height: 4rem;
+  width: 4rem;
+  border: 3px solid #fcfcfc;
 }
 
 @media (max-width: 971px) {
