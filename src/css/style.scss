@@ -10,6 +10,8 @@
 h1 {
   font-size: 8rem;
   padding: 2rem;
+  text-align: center;
+  color: goldenrod;
 }
 
 .black {
@@ -175,4 +177,14 @@ input {
       margin-bottom: 3rem;
     }
   }
+}
+
+.score-up-caret {
+  color: gold;
+  font-size: 0.8rem;
+margin-top: -1rem;
+}
+
+.rating {
+  color: gold;
 }
