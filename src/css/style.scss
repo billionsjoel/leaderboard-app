@@ -15,7 +15,7 @@ h1 {
 }
 
 .black {
-  color: #000000 !important;
+  color: #000 !important;
 }
 
 .container {
@@ -93,22 +93,22 @@ button {
   gap: 1rem;
   cursor: pointer;
 
-    & svg {
-      height: 1rem;
-      width: 1rem;
-    }
+  & svg {
+    height: 1rem;
+    width: 1rem;
+  }
 
-    &:hover {
+  &:hover {
     border: 1px solid #61f180;
     background-color: #f3f3f3;
     color: #28b485;
-
   }
 }
 
 .score-1 {
   background-color: #7ed56f;
 }
+
 .score-2 {
   background-color: #28b485;
 }
@@ -137,7 +137,7 @@ input {
 
 .submit-btn {
   background-color: #7f77c7;
-  color: #ffffff;
+  color: #fff;
   border-radius: 5px;
 
   &:hover {
@@ -182,7 +182,7 @@ input {
 .score-up-caret {
   color: gold;
   font-size: 0.8rem;
-margin-top: -1rem;
+  margin-top: -1rem;
 }
 
 .rating {
