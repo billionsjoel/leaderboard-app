@@ -79,3 +79,29 @@ input {
   border-radius: 5px;
   border: 1px solid #bebcbc;
 }
+
+@media (max-width: 971px) {
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+  .container {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 5rem;
+  }
+
+  .score-content {
+    width: 100vh;
+  }
+
+  .add-score {
+    width: 100vh;
+
+    & .title {
+      font-size: 2rem;
+      margin-bottom: 3rem;
+    }
+  }
+}
