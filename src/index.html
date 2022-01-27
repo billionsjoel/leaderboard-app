@@ -36,8 +36,8 @@
         <h4 class="title">Add your score</h4>
       </div>
       <form class="form">
-        <input type="text" name="name" id="name" placeholder="Your name" required>
-        <input type="number" name="score" id="score" placeholder="Your score" required>
+        <input type="text" name="name" id="name" placeholder="Your name" maxlength="6" required>
+        <input type="number" name="score" id="score" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" placeholder="Your score" maxlength="2" required>
         <input type="submit" value="Submit" class="submit-btn">
       </form>
     </div>
