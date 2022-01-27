@@ -15,7 +15,7 @@
 - Git, Github and VsCode.
 
 ### Live Demo
- - Click [here]() for the live site.
+ - Click [here](https://billionsjoel.github.io/leaderboard-app/) for the live site.
 
 ## Getting Started
 
